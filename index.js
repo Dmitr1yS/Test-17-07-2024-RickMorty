@@ -61,3 +61,18 @@ async function fetchAndSaveCharacters() {
 }
 
 fetchAndSaveCharacters();
+
+//If you need to delete a table, you can use the following query:
+/*
+async function dropTable() {
+    try {
+        await pool.query('DROP TABLE IF EXISTS dmitr1y_s;'); 
+        console.log('Table dmitr1y_s dropped successfully.');
+    } catch (err) {
+        console.error('Error: ', err.stack);
+    } finally {
+        await pool.end(); 
+    }
+}
+
+dropTable(); */
